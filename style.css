@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Header</title>
-    <style>
-        body {
+body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
@@ -27,20 +20,3 @@
         nav a:hover {
             text-decoration: underline;
         }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Website Saya</h1>
-    <p>Selamat datang di website saya</p>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
-</nav>
-
-</body>
-</html>
