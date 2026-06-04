@@ -257,4 +257,36 @@
       font-weight: 300;
       opacity: 0;
       animation: fadeUp 1s 0.7s forwards;
+    }@155769941020720  
+
+    .hero-cta {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 52px;
+      opacity: 0;
+      animation: fadeUp 1s 0.9s forwards;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      padding: 16px 44px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: none;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
     }
