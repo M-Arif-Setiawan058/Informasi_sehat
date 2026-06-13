@@ -250,80 +250,131 @@
     </div>
   </section>
   <div class="brands-section" id="tentang">
-<div class="section-header" style="margin-bottom:0">
-<p class="section-eyebrow">Brand Partner</p>
-<h2 class="section-title" style="font-size:36px">Kami Bermitra Dengan 
-<em>Terbaik</em></h2>
-</div>
-<div class="brands-grid">
-<div class="brand-item">AURORA</div>
-<div class="brand-item">VERONE</div>
-<div class="brand-item">ELARA</div>
-<div class="brand-item">NOIR CO</div>
-<div class="brand-item">SOLESTE</div>
-<div class="brand-item">MARIEN</div>
-</div>
-</div>
-<section class="newsletter-section" id="kontak">
-<p class="section-eyebrow">Newsletter</p>
-<h2 class="section-title">Dapatkan <em>Penawaran</em> Eksklusif</h2>
-<p style="font-size:12px;color:var(--gray);margin-top:16px;letterspacing:1px;">Daftarkan email Anda dan jadilah
-yang pertama mendapat koleksi terbaru & promo spesial</p>
-<div class="newsletter-form">
-<input type="email" class="newsletter-input" placeholder="Masukkan email 
+    <div class="section-header" style="margin-bottom:0">
+      <p class="section-eyebrow">Brand Partner</p>
+      <h2 class="section-title" style="font-size:36px">Kami Bermitra Dengan
+        <em>Terbaik</em>
+      </h2>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-item">AURORA</div>
+      <div class="brand-item">VERONE</div>
+      <div class="brand-item">ELARA</div>
+      <div class="brand-item">NOIR CO</div>
+      <div class="brand-item">SOLESTE</div>
+      <div class="brand-item">MARIEN</div>
+    </div>
+  </div>
+  <section class="newsletter-section" id="kontak">
+    <p class="section-eyebrow">Newsletter</p>
+    <h2 class="section-title">Dapatkan <em>Penawaran</em> Eksklusif</h2>
+    <p style="font-size:12px;color:var(--gray);margin-top:16px;letterspacing:1px;">Daftarkan email Anda dan jadilah
+      yang pertama mendapat koleksi terbaru & promo spesial</p>
+    <div class="newsletter-form">
+      <input type="email" class="newsletter-input" placeholder="Masukkan email 
 Anda..." id="emailInput">
-<button class="newsletter-btn" onclick="subscribeNewsletter()">Daftar 
-✦</button>
-</div>
-</section>
+      <button class="newsletter-btn" onclick="subscribeNewsletter()">Daftar
+        ✦</button>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">LUX<em>ORA</em></div>
+        <p class="footer-desc">Aksesori premium untuk pria dan wanita yang
+          menghargai keindahan dalam setiap detail.
+          Lebih dari sekadar aksesori — ini adalah pernyataan gaya.</p>
+        <div class="footer-socials">
+          <div class="social-icon">📘</div>
+          <div class="social-icon">📸</div>
+          <div class="social-icon">🐦</div>
+          <div class="social-icon">▶️</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Belanja</div>
+        <ul class="footer-links">
+          <li><a href="#">Koleksi Pria</a></li>
+          <li><a href="#">Koleksi Wanita</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Sale & Promo</a></li>
+          <li><a href="#">Edisi Terbatas</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Informasi</div>
+        <ul class="footer-links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Blog & Gaya Hidup</a></li>
+          <li><a href="#">Panduan Ukuran</a></li>
+          <li><a href="#">Autentikasi Produk</a></li>
+          <li><a href="#">Karir</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Bantuan</div>
+        <ul class="footer-links">
+          <li><a href="#">Hubungi Kami</a></li>
+          <li><a href="#">Pengiriman & Return</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Lacak Pesanan</a></li>
+          <li><a href="#">Garansi Produk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 My Accesory. Semua Hak Dilindungi.</p>
+      <div class="footer-legal">
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat & Ketentuan</a>
+        <a href="#">Cookie</a>
+      </div>
+    </div>
+  </footer>
   <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-<div class="cart-sidebar" id="cartSidebar">
-<div class="cart-header">
-<div class="cart-title">Keranjang</div>
-<button class="cart-close" onclick="toggleCart()">✕</button>
-</div>
-<div class="cart-items" id="cartItems">
-  <p style="font-size:13px;color:var(--gray);text-align:center;margintop:60px;font-style:italic;">Keranjang Anda
-kosong</p>
-</div>
-<div class="cart-footer" id="cartFooter" style="display:none">
-<div class="cart-total-row">
-<span class="cart-total-label">Total</span>
-<span class="cart-total-val" id="cartTotal">Rp 0</span>
-</div>
-<button class="checkout-btn">Checkout Sekarang →</button>
-</div>
-</div>
-<div class="toast" id="toast">✦ <span id="toastMsg"></span></div>
-<div class="modal-overlay" id="searchOverlay" onclick="closeSearch()"></div>
-<div class="search-modal" id="searchModal">
-<div class="search-modal-inner">
-<p class="search-label">Apa yang Anda cari?</p>
-<div class="search-input-wrap">
-<span class="search-icon-input">🔍</span>
-<input type="text" class="search-input" id="searchInput"
-placeholder="Cari produk, kategori..."
-oninput="doSearch(this.value)"
-onkeydown="if(event.key==='Escape')closeSearch()">
-<button class="search-clear" id="searchClear" onclick="clearSearch()"
-style="display:none">✕</button>
-</div>
-<div class="search-suggestions" id="searchSuggestions">
-<p class="search-hint">Pencarian populer:</p>
-<div class="search-tags">
-<span class="search-tag" onclick="quickSearch('Arloji')">Arloji</span>
-<span class="search-tag" onclick="quickSearch('Tas')">Tas Kulit</span>
-<span class="search-tag"
-onclick="quickSearch('Perhiasan')">Perhiasan</span>
-<span class="search-tag" onclick="quickSearch('Dompet')">Dompet</span>
-<span class="search-tag" onclick="quickSearch('Gelang')">Gelang</span>
-</div>
-</div>
-<div class="search-results" id="searchResults"></div>
-</div>
-<button class="modal-close-btn" onclick="closeSearch()">✕ Tutup</button>
-</div>
-  
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <div class="cart-title">Keranjang</div>
+      <button class="cart-close" onclick="toggleCart()">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p style="font-size:13px;color:var(--gray);text-align:center;margintop:60px;font-style:italic;">Keranjang Anda
+        kosong</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-val" id="cartTotal">Rp 0</span>
+      </div>
+      <button class="checkout-btn">Checkout Sekarang →</button>
+    </div>
+  </div>
+  <div class="toast" id="toast">✦ <span id="toastMsg"></span></div>
+  <div class="modal-overlay" id="searchOverlay" onclick="closeSearch()"></div>
+  <div class="search-modal" id="searchModal">
+    <div class="search-modal-inner">
+      <p class="search-label">Apa yang Anda cari?</p>
+      <div class="search-input-wrap">
+        <span class="search-icon-input">🔍</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Cari produk, kategori..."
+          oninput="doSearch(this.value)" onkeydown="if(event.key==='Escape')closeSearch()">
+        <button class="search-clear" id="searchClear" onclick="clearSearch()" style="display:none">✕</button>
+      </div>
+      <div class="search-suggestions" id="searchSuggestions">
+        <p class="search-hint">Pencarian populer:</p>
+        <div class="search-tags">
+          <span class="search-tag" onclick="quickSearch('Arloji')">Arloji</span>
+          <span class="search-tag" onclick="quickSearch('Tas')">Tas Kulit</span>
+          <span class="search-tag" onclick="quickSearch('Perhiasan')">Perhiasan</span>
+          <span class="search-tag" onclick="quickSearch('Dompet')">Dompet</span>
+          <span class="search-tag" onclick="quickSearch('Gelang')">Gelang</span>
+        </div>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="modal-close-btn" onclick="closeSearch()">✕ Tutup</button>
+  </div>
+
 
 </body>
 
