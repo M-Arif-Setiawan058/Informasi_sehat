@@ -538,3 +538,43 @@ cursor: none;
 transform: translateY(10px);
 transition: transform 0.4s 0.05s;
 }
+.product-card:hover .overlay-btn {
+transform: translateY(0);
+}
+.product-badge {
+position: absolute;
+top: 16px;
+left: 16px;
+background: var(--gold);
+color: var(--black);
+font-size: 8px;
+font-weight: 700;
+letter-spacing: 2px;
+padding: 5px 10px;
+text-transform: uppercase;
+}
+.product-badge.new {
+background: var(--dark);
+color: var(--gold);
+border: 1px solid var(--gold);
+}
+.product-info {
+padding: 22px 20px;
+border-top: 1px solid rgba(201, 169, 110, 0.1);
+}
+.product-category {
+font-size: 9px;
+letter-spacing: 3px;
+color: var(--gold);
+text-transform: uppercase;
+margin-bottom: 8px;
+font-weight: 500;
+}
+.product-name {
+font-family: 'Cormorant Garamond', serif;
+font-size: 20px;
+font-weight: 400;
+color: var(--white);
+margin-bottom: 4px;
+line-height: 1.2;
+}
