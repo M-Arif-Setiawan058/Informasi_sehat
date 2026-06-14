@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Database Obat & Suplemen â€” SehatKu</title>
-  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml"/>
-  <link rel="stylesheet" href="../css/main.css"/>
-  <link rel="stylesheet" href="../css/components.css"/>
-  <link rel="stylesheet" href="../css/darkmode.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/darkmode.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;1,400&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
 
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="../index.html" class="nav-logo"><span class="logo-icon">âœš</span><span class="logo-text">Sehat<span class="logo-accent">Ku</span></span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html" class="nav-link">Beranda</a></li>
-      <li><a href="artikel.html" class="nav-link">Artikel</a></li>
-      <li><a href="penyakit.html" class="nav-link">Ensiklopedi Penyakit</a></li>
-      <li><a href="obat.html" class="nav-link active">Obat & Suplemen</a></li>
-      <li><a href="kalkulator.html" class="nav-link">Kalkulator</a></li>
-    </ul>
-    <button class="nav-cta" onclick="window.location.href='konsultasi.html'">Konsultasi Gratis</button>
-    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Ganti tema">ðŸŒ™</button>
-    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-  </div>
-</nav>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo"><span class="logo-icon">âœš</span><span class="logo-text">Sehat<span
+            class="logo-accent">Ku</span></span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Beranda</a></li>
+        <li><a href="artikel.html" class="nav-link">Artikel</a></li>
+        <li><a href="penyakit.html" class="nav-link">Ensiklopedi Penyakit</a></li>
+        <li><a href="obat.html" class="nav-link active">Obat & Suplemen</a></li>
+        <li><a href="kalkulator.html" class="nav-link">Kalkulator</a></li>
+      </ul>
+      <button class="nav-cta" onclick="window.location.href='konsultasi.html'">Konsultasi Gratis</button>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Ganti tema">ðŸŒ™</button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-eyebrow">Referensi Farmasi</div>
+      <h1>Database Obat & Suplemen</h1>
+      <p>Informasi lengkap tentang obat, dosis, efek samping, dan interaksi obat yang perlu Anda ketahui.</p>
+      <div class="alert alert-warning" style="max-width:600px;margin:1.5rem auto 0;text-align:left">
+        âš ï¸ <strong>Peringatan:</strong> Selalu konsultasikan dengan dokter atau apoteker sebelum mengonsumsi obat.
+        Jangan sembarangan mengganti atau menghentikan pengobatan.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:flex;gap:1rem;margin-bottom:1.5rem;flex-wrap:wrap;align-items:center">
+        <div class="search-bar" style="flex:1;min-width:250px">
+          <span class="search-icon">ðŸ”</span>
+          <input type="text" class="search-input" placeholder="Cari nama obat atau zat aktif..."
+            oninput="filterDrugs(this.value)" />
+        </div>
+        <div class="filters-bar" style="margin:0">
+          <button class="filter-pill active" onclick="filterByType('semua',this)">Semua</button>
+          <button class="filter-pill" onclick="filterByType('bebas',this)">Obat Bebas</button>
+          <button class="filter-pill" onclick="filterByType('resep',this)">Obat Resep</button>
+          <button class="filter-pill" onclick="filterByType('suplemen',this)">Suplemen</button>
+        </div>
+      </div>
+
+      <div id="drugsGrid" style="display:flex;flex-direction:column;gap:1rem"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>Â© 2025 SehatKu. Selalu konsultasikan dengan tenaga medis profesional.</p>
+      </div>
+    </div>
+  </footer>
