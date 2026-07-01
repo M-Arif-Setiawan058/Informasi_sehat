@@ -69,3 +69,24 @@
     </div>
   </div>
 </footer>
+<script src="../js/main.js"></script>
+<script>
+const CATEGORIES = {
+  jantung:     { name: 'Jantung & Pembuluh Darah', icon: '❤️', desc: 'Artikel seputar kesehatan jantung, hipertensi, kolesterol, dan sistem kardiovaskular.', count: 128 },
+  diabetes:    { name: 'Diabetes & Metabolisme', icon: '🩸', desc: 'Panduan lengkap seputar diabetes, gula darah, insulin, dan gangguan metabolisme.', count: 94 },
+  pencernaan:  { name: 'Kesehatan Pencernaan', icon: '🫁', desc: 'Informasi tentang maag, GERD, usus besar, liver, dan gangguan pencernaan lainnya.', count: 76 },
+  mental:      { name: 'Kesehatan Mental', icon: '🧠', desc: 'Artikel tentang depresi, kecemasan, stres, tidur, dan kesejahteraan psikologis.', count: 112 },
+  anak:        { name: 'Kesehatan Anak', icon: '👶', desc: 'Panduan tumbuh kembang, imunisasi, penyakit anak, dan nutrisi bayi & balita.', count: 89 },
+  kulit:       { name: 'Kulit & Kecantikan', icon: '🌿', desc: 'Tips dan informasi perawatan kulit, jerawat, eksim, dan kondisi dermatologis lainnya.', count: 65 },
+  tulang:      { name: 'Tulang & Sendi', icon: '🦴', desc: 'Panduan osteoporosis, arthritis, nyeri punggung, dan kesehatan sistem muskuloskeletal.', count: 57 },
+  gizi:        { name: 'Gizi & Diet', icon: '🥗', desc: 'Panduan nutrisi seimbang, diet sehat, suplemen, dan kebutuhan gizi berbagai usia.', count: 103 },
+};
+
+const SAMPLE_ARTICLES = [
+  { emoji:'❤️', date:'10 Jun 2025', time:'5 mnt', title:'7 Cara Menjaga Kesehatan {CAT}', excerpt:'Temukan strategi pencegahan yang terbukti secara ilmiah dari para ahli terkemuka di bidangnya.' },
+  { emoji:'📋', date:'8 Jun 2025',  time:'7 mnt', title:'Panduan Lengkap: Memahami Kondisi {CAT}', excerpt:'Penjelasan komprehensif tentang penyebab, gejala, dan pilihan pengobatan terkini.' },
+  { emoji:'🍽️', date:'5 Jun 2025',  time:'6 mnt', title:'Makanan Terbaik untuk Mendukung {CAT}', excerpt:'Nutrisi yang tepat dapat membantu mencegah dan mengelola berbagai kondisi kesehatan.' },
+  { emoji:'🏃', date:'2 Jun 2025',  time:'4 mnt', title:'Olahraga dan Pengaruhnya pada {CAT}', excerpt:'Aktivitas fisik yang tepat bisa memberikan manfaat luar biasa bagi kesehatan Anda.' },
+  { emoji:'💊', date:'30 Mei 2025', time:'5 mnt', title:'Obat dan Suplemen untuk {CAT}', excerpt:'Panduan berbasis bukti tentang pilihan pengobatan dan suplementasi yang tersedia.' },
+  { emoji:'🔬', date:'25 Mei 2025', time:'8 mnt', title:'Penelitian Terbaru tentang {CAT}', excerpt:'Update terkini dari jurnal medis internasional tentang perkembangan ilmu di bidang ini.' },
+];
